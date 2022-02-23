@@ -7,7 +7,7 @@ btpanel-v7.7.0-backup  官方原版v7.7.0版本面板备份
 curl -sSO https://raw.githubusercontent.com/wwwxxx0402/btpanel-v7.7.0/main/install/install_panel.sh && bash install_panel.sh
 ```
 
-**去除登录框
+**去除登录框 **
 ```Bash
 sed -i "s|if (bind_user == 'True') {|if (bind_user == 'REMOVED') {|g" /www/server/panel/BTPanel/static/js/index.js
 rm -rf /www/server/panel/data/bind.pl
